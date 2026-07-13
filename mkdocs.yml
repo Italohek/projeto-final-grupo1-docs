@@ -1,0 +1,101 @@
+site_name: Lightning Network Routing Optimization
+
+site_description: Projeto Final de Bitcoin
+
+site_author: Grupo 1
+
+repo_url: https://github.com/Prof-Edil/projeto-final-grupo1
+repo_name: projeto-final-grupo1
+
+theme:
+  name: material
+  language: pt-BR
+
+  logo: assets/figures/icone.png
+
+  favicon: assets/figures/icone.png
+
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+
+  palette:
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+markdown_extensions:
+
+  - admonition
+
+  - attr_list
+
+  - md_in_html
+
+  - tables
+
+  - footnotes
+
+  - toc:
+      permalink: true
+
+  - pymdownx.details
+
+  - pymdownx.superfences
+
+  - pymdownx.highlight
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.magiclink
+
+  - pymdownx.keys
+
+  - pymdownx.tasklist
+
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Prof-Edil/projeto-final-grupo1
+
+nav:
+
+  - Home: index.md
+  - Introdução: introduction.md
+  - Lightning Network: lightning.md
+  - Metodologia: methodology.md
+  - Implementação: implementation.md
+  - Experimentos: experiments.md
+  - Resultados: results.md
+  - Discussão: discussion.md
+  - Conclusão: conclusion.md
+  - Referências: references.md
