@@ -108,15 +108,8 @@ Essa modelagem permite aplicar algoritmos clássicos de teoria dos grafos para r
 
 A Figura abaixo resume a representação utilizada pelo simulador.
 
-```text
-         Canal AB
- Alice ─────────────► Bob
-   ▲                    │
-   │                    │
-   │                    ▼
- Charlie ◄──────── Binance
-         Canal BC
-```
+
+*![Taxa_de_sucesso](../docs/assets/figures/Representação_Simulador.png)*
 
 Embora simplificada, essa representação preserva as principais características necessárias para o cálculo das rotas.
 
@@ -128,32 +121,6 @@ O simulador desenvolvido utiliza um *snapshot* público da Lightning Network par
 
 Após o carregamento dos dados, cada pagamento solicitado pelo usuário segue o fluxo abaixo:
 
-```text
-Snapshot da Lightning
-          │
-          ▼
-Construção do Grafo
-          │
-          ▼
- Seleção da Origem
-          │
-          ▼
- Seleção do Destino
-          │
-          ▼
- Valor da Transação
-          │
-          ▼
- Algoritmo de Dijkstra
-          │
-          ▼
- Verificação da Capacidade
-          │
-          ▼
- Cálculo das Taxas
-          │
-          ▼
- Melhor Rota
-```
+![Fluxo_do_snapshot](../docs/assets/figures/Fluxo_snapshot.png)
 
 Nos capítulos seguintes serão apresentados os detalhes da construção do conjunto de dados, da implementação do simulador e dos experimentos realizados.

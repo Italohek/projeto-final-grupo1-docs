@@ -31,27 +31,7 @@ Cada cenário inicia com a rede em seu estado original, evitando que o consumo d
 
 O fluxo de execução pode ser resumido da seguinte forma:
 
-```text
-Snapshot da Lightning
-          │
-          ▼
-Construção do Grafo
-          │
-          ▼
-Inicialização do Simulador
-          │
-          ▼
-Execução dos Pagamentos
-          │
-          ▼
-Atualização da Liquidez
-          │
-          ▼
-Coleta das Estatísticas
-          │
-          ▼
-Exportação para JSON
-```
+![Configuração_experimental](../docs/assets/figures/Configuração_experimental.png)
 
 ---
 
