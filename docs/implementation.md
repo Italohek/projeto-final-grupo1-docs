@@ -10,7 +10,7 @@ Essa divisão facilita tanto a manutenção quanto a evolução do sistema, perm
 
 A Figura abaixo apresenta a organização dos principais módulos do projeto.
 
-![Arquitetura_geral](../docs/assets/figures/Arquitetura_geral.png)
+![Arquitetura_geral](../assets/figures/Arquitetura_geral.png)
 
 Cada módulo possui responsabilidades bem definidas, descritas nas seções seguintes.
 
@@ -170,7 +170,7 @@ Essa organização permite separar claramente as etapas de preparação dos dado
 
 O funcionamento completo da aplicação pode ser resumido pelo fluxo apresentado abaixo.
 
-![Fluxo_de_execução](../docs/assets/figures/Fluxo_de_Execução.png)
+![Fluxo_de_execução](../assets/figures/Fluxo_de_Execução.png)
 
 ---
 

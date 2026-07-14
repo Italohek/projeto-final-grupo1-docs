@@ -1051,31 +1051,7 @@
 <hr />
 <h2 id="arquitetura-geral">Arquitetura Geral<a class="headerlink" href="#arquitetura-geral" title="Permanent link">&para;</a></h2>
 <p>A Figura abaixo apresenta a organização dos principais módulos do projeto.</p>
-<div class="highlight"><pre><span></span><code>                    gossip.bz2
-                         │
-                         ▼
-                   gera_JSON.py
-                         │
-                         ▼
-                  ln_sample.json
-                         │
-                         ▼
-          script_de_construcao_do_grafo.py
-                         │
-                         ▼
-                 Grafo (NetworkX)
-                         │
-         ┌───────────────┴───────────────┐
-         ▼                               ▼
- 2_route_finder.py             run_experiments.py
-         │                               │
-         └───────────────┬───────────────┘
-                         ▼
-                      app.py
-                         │
-                         ▼
-                Interface Streamlit
-</code></pre></div>
+<p><img alt="Arquitetura_geral" src="../assets/figures/Arquitetura_geral.png" /></p>
 <p>Cada módulo possui responsabilidades bem definidas, descritas nas seções seguintes.</p>
 <hr />
 <h2 id="conversao-do-snapshot">Conversão do Snapshot<a class="headerlink" href="#conversao-do-snapshot" title="Permanent link">&para;</a></h2>
@@ -1186,32 +1162,7 @@
 <hr />
 <h2 id="fluxo-de-execucao">Fluxo de Execução<a class="headerlink" href="#fluxo-de-execucao" title="Permanent link">&para;</a></h2>
 <p>O funcionamento completo da aplicação pode ser resumido pelo fluxo apresentado abaixo.</p>
-<div class="highlight"><pre><span></span><code>Snapshot da Lightning
-          │
-          ▼
-Conversão para JSON
-          │
-          ▼
-Construção do Grafo
-          │
-          ▼
-Seleção da Origem e Destino
-          │
-          ▼
-Cálculo da Melhor Rota
-          │
-          ▼
-Atualização da Liquidez
-          │
-          ▼
-Visualização dos Resultados
-          │
-          ▼
-Execução de Experimentos
-          │
-          ▼
-Análise Estatística
-</code></pre></div>
+<p><img alt="Fluxo_de_execução" src="../assets/figures/Fluxo_de_Execução.png" /></p>
 <hr />
 <h2 id="consideracoes">Considerações<a class="headerlink" href="#consideracoes" title="Permanent link">&para;</a></h2>
 <p>A arquitetura modular adotada durante o desenvolvimento permitiu separar claramente as responsabilidades dos diferentes componentes da aplicação.</p>
